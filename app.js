@@ -1,7 +1,3 @@
-// =========//
-// Setup!  //
-// =========//
-
 var reseedDatabase = false;
 
 var express = require('express'),
@@ -75,12 +71,6 @@ app.use('/campgrounds', campgroundRoutes);
 app.use('/campgrounds/:campground_id/comments', commentRoutes);
 
 
-// ===========//
-// Listener! //
-// ===========//
-
 app.listen(1337, function() {
-  var appConsoleMsg = 'YelpCamp server has started: ';
-  appConsoleMsg += process.env.IP + ':' + process.env.PORT;
-  console.log(appConsoleMsg);
+  console.log("The application has started.");
 });
